@@ -34,7 +34,7 @@ syn0 = 2 * np.random.random((3, 4)) - 1
 syn1 = 2 * np.random.random((4, 1)) - 1
 
 #iterate multiple times to optimise our neural network
-for i in range(80000):
+for i in range(60000):
 
 	#forward propogation
 	l0 = x
