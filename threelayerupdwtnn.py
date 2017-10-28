@@ -74,12 +74,12 @@ for alpha in alphas:
 
 		syn1_wt = l1.T.dot(l2_delta)
 		syn0_wt = l0.T.dot(l1_delta)
-		print(syn0_wt)
-		print(syn1_wt)
+		#print(syn0_wt)
+		#print(syn1_wt)
 
 		if (i > 0):
-			syn0_count = np.abs(((syn0_wt > 0) + 0) - ((prev_syn0_wt > 0) + 0))
-			syn1_count = np.abs(((syn1_wt > 0) + 0) - ((prev_syn1_wt > 0) + 0))
+			syn0_count = np.abs(((syn0_wt) + 0) - ((prev_syn0_wt) + 0))
+			syn1_count = np.abs(((syn1_wt) + 0) - ((prev_syn1_wt) + 0))
 		#print(syn0_count)
 		#print(syn1_count)		
 
